@@ -2,14 +2,26 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     margin: 0;
     padding: 0;
 }
-header
+header{
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 82px 50px 96px;
+}
   .header_logo {
-    width: 148px;
+    width: 130px;
+    height: 105px;
     display: block;
 }
 main {
     
 }
+ul {
+    list-style-type: none; /* Убирает маркеры */
+    padding: 0;            /* Убирает отступы слева */
+    margin: 0;             /* Убирает внешние отступы */
+}
+
 .content-section {
     box-sizing: border-box;
     margin: auto;
@@ -18,13 +30,12 @@ main {
 .cover {
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center;
     background-size: cover;
     background-image:url(/images/cover.jpg) ;
     color: #fff;
     font-family: raleway, sans-serif;
     height: 757px;
-    padding: 50px, 165px, 207px;
+    padding: 50px, 165px, 50px;
    }
    .overlay {
     background-color: #00000026;
@@ -61,6 +72,27 @@ main {
      width: 148px;
     display: block;
     }
+.about{    padding: 120px 24px 180px;
+  }
 footer {
-        padding: 0px 50px 82px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 240px;
+    align-items: center;
+    padding: 0px 50px 82px;
+}
+.social-icon {
+width: 48px;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-between ; /* Центрирование */
+  width: 240px;
+}
+.footer__menu {
+box-sizing: center;
+}
+.footer__menu-item {
+}
+.footer__menu-list {
+text-align: center;
 }
