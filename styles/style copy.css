@@ -14,25 +14,28 @@ ul {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    justify-items: center;
     font-size: 18px;
     }
 .header__links-list {
     display: flex;
     gap: 32px;
+    align-items: center;
     }
 .header__links-list-item {
    list-style: circle;
 }
-.header__link { /* Не работает */
+.header__links-list-item_no-bullit {
     list-style-type: none;
  }
- header__links-list-item_no-bullit { /* Не работает */
-    list-style-type: none;
- }
+ .header__logo {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  width: 130px;
+}
 .header__logo-image {
-    width: 130px;
-    }
+  width: 100%;
+}
 
 .adress {
     display: flex;
@@ -40,15 +43,42 @@ ul {
     align-items: flex-start;
     max-width: 240px;
     justify-self: end;
+    font-style: inherit;
+    line-height: 1.35;
 }
 main {}
 .cover {
-   display: block;
-    padding: 0;
+    display: block;
+    padding: 165px 50px 50px;
     background-image: url("/images/cover.jpg");
     background-position: center;
+    background-size: cover;
     height: 757px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+       }
+.overlay {
+  position: absolute;
+  top: 293px;px;
+  left: 0;
+  z-index: -0;
+  width: 100%;
+  height: 100%;
+  background-color: #e00d0df8;}
+  
+.aligned-text {
+    font-size: 700%;
+    font-weight: 100;
 }
+.cover__description {
+    font-size: 100%;
+    font-weight: 10;
+}
+.bet-button {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 400;}
+   
 .lots {
     padding: 180px 24px 120px;
 }
