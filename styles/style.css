@@ -122,8 +122,9 @@ ul {
 .lots__heading { /* заголовок секции; */
    font-size: 40px;
    font-weight: 700;
-   margin-bottom: 34px;
+   margin-bottom: 25px;
    line-height: 47px;
+   margin-top: 2px;
    margin-left: 40px;
    text-transform: uppercase;
 }
@@ -131,10 +132,6 @@ ul {
     display: flex;
     gap: 25px;
     margin-bottom: 30px;
-}
-.card__link { /*ссылка карточки*/
-    color: rgb(255, 255, 255);
-    text-decoration: none;
 }
 .card {  /*карточка*/
     position: relative;
@@ -147,7 +144,11 @@ ul {
     width: 334px;
     min-height: 596px;
     padding: 48px 40px;
-    margin-top: -7px; /*почему?*/
+   /* margin-top: -7px; почему?*/
+}
+.card__link { /*ссылка карточки*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .card__title { /*заголовок карточки*/
     font-size: 22px;
